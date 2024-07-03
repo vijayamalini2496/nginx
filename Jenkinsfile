@@ -7,15 +7,6 @@ pipeline {
                      git 'https://github.com/vijayamalini2496/ecs-proj.git'
                 }
             }
-            
-        
-         stage ('Build') {
-            steps {
-                script{
-                     sh 'npm install'
-                }
-            }
         }
- }
-}
+    }
 
