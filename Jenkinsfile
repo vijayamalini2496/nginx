@@ -5,16 +5,10 @@ pipeline {
             steps {
                 script {
                     git 'https://github.com/vijayamalini2496/ecs-proj.git'
+                    sh "ch - success"
                 }
             }
-        }
-         stage ('SCM npm') {
-            steps {
-                script {
-                    sh "checkout success"
-                }
-            }
-        }
         }
     }
+}
 
