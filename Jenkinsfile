@@ -8,21 +8,13 @@ pipeline {
                 }
             }
         }
-        stage('Install dependencies') {
+         stage ('SCM npm') {
             steps {
                 script {
-                    // Install npm dependencies
-                    sh 'npm install'
+                    sh "checkout success"
                 }
             }
         }
-        stage('Build') {
-            steps {
-                script {
-                    // Run the npm build script
-                    sh 'npm run build'
-                }
-            }
         }
     }
-}
+
